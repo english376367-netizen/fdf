@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer & Community English Practice</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#eef7ff,#fff8ed);color:#18324b}
+.container{max-width:1050px;margin:auto;padding:18px}
+header{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;border-radius:22px;padding:25px 22px;margin-bottom:18px;box-shadow:0 8px 25px #0001}
+h1{margin:0 0 8px;font-size:28px} h2{margin-top:0;color:#173b67}
+.subtitle{opacity:.95}
+.section{background:white;border-radius:20px;padding:20px;margin:18px 0;box-shadow:0 5px 18px #00000012}
+.section-title{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.badge{background:#e0ecff;color:#1d4ed8;border-radius:999px;padding:6px 11px;font-weight:bold;font-size:13px}
+.question{border:1px solid #dce7f3;border-radius:16px;padding:16px;margin:14px 0;background:#fbfdff}
+.qtext{font-weight:700;line-height:1.55;margin-bottom:12px}
+.options{display:grid;gap:9px}
+.option{display:block;border:1px solid #cbd8e8;border-radius:12px;padding:11px 13px;cursor:pointer;background:white;transition:.15s}
+.option:hover{background:#eef6ff;border-color:#6ea8fe}
+.option input{margin-right:9px}
+.fill-input{width:100%;max-width:520px;padding:11px;border:2px solid #cbd8e8;border-radius:10px;font-size:16px}
+button{border:0;border-radius:12px;padding:12px 18px;font-size:16px;font-weight:700;cursor:pointer;background:#2563eb;color:white}
+button:hover{filter:brightness(.95)}
+.check-btn{margin-top:10px}
+.result{margin-top:12px;padding:12px;border-radius:11px;font-weight:700;display:none}
+.correct{background:#dcfce7;color:#166534;border:1px solid #86efac}
+.wrong{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+.explanation{margin-top:9px;padding:11px;border-left:4px solid #f59e0b;background:#fff7df;border-radius:8px;display:none;line-height:1.55}
+.score{background:#eef6ff;border-radius:14px;padding:13px;margin-top:15px;font-weight:700}
+.vocab{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.vocab-card{background:#f8fafc;border-left:5px solid #fbbf24;padding:12px;border-radius:10px;line-height:1.5}
+.vocab-card b{color:#174ea6}
+.grammar{background:#f7f3ff;border-radius:14px;padding:15px;line-height:1.65}
+.grammar strong{color:#6d28d9}
+.answer-box{margin-top:10px;padding:12px;background:#f0fdf4;border-radius:10px;display:none}
+.small{font-size:14px;color:#52677d}
+@media(max-width:600px){body{font-size:15px}.container{padding:10px}header{padding:20px 16px}h1{font-size:23px}.section{padding:14px}.question{padding:13px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Volunteer & Community English Practice</h1>
+<div class="subtitle">Vocabulary • Word Forms • Past Continuous & Past Simple • when / while</div>
+</header>
+
+<section class="section">
+<div class="section-title"><h2>Exercise 1 — Word Forms</h2><span class="badge">Choose the correct form</span></div>
+<p class="small">Words: donate • volunteer • generous • remote • benefit</p>
+
+<div id="ex1">
+<div class="question" data-answer="generous">
+<div class="qtext">1. He is very ________. He is always willing to give a lot of money to charity.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q1" value="donate"> donate</label>
+<label class="option"><input type="radio" name="q1" value="volunteer"> volunteer</label>
+<label class="option"><input type="radio" name="q1" value="generous"> generous</label>
+<label class="option"><input type="radio" name="q1" value="benefit"> benefit</label>
+</div><div class="explanation">“Generous” = hào phóng. Người luôn sẵn sàng cho nhiều tiền từ thiện là người hào phóng.</div></div>
+
+<div class="question" data-answer="remote">
+<div class="qtext">2. The school is difficult to get to because it is located in a ________ area.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q2" value="donate"> donate</label>
+<label class="option"><input type="radio" name="q2" value="remote"> remote</label>
+<label class="option"><input type="radio" name="q2" value="generous"> generous</label>
+<label class="option"><input type="radio" name="q2" value="benefit"> benefit</label>
+</div><div class="explanation">“Remote area” = vùng xa xôi/hẻo lánh. Trường khó đến vì nằm ở khu vực xa.</div></div>
+
+<div class="question" data-answer="donate">
+<div class="qtext">3. If you don't have time to volunteer, you can ________ money and food.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q3" value="donate"> donate</label>
+<label class="option"><input type="radio" name="q3" value="volunteer"> volunteer</label>
+<label class="option"><input type="radio" name="q3" value="remote"> remote</label>
+<label class="option"><input type="radio" name="q3" value="benefit"> benefit</label>
+</div><div class="explanation">“Donate” = quyên góp. Cấu trúc: donate + money/food/clothes = quyên góp tiền/thức ăn/quần áo.</div></div>
+
+<div class="question" data-answer="benefit">
+<div class="qtext">4. This clean water project will ________ the people in the village.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q4" value="benefit"> benefit</label>
+<label class="option"><input type="radio" name="q4" value="donate"> donate</label>
+<label class="option"><input type="radio" name="q4" value="remote"> remote</label>
+<label class="option"><input type="radio" name="q4" value="generous"> generous</label>
+</div><div class="explanation">“Benefit” là động từ = mang lại lợi ích cho. “Benefit the people” = mang lại lợi ích cho người dân.</div></div>
+
+<div class="question" data-answer="volunteer">
+<div class="qtext">5. Our club needs more ________ to clean up the park at the weekend.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q5" value="volunteer"> volunteer</label>
+<label class="option"><input type="radio" name="q5" value="donate"> donate</label>
+<label class="option"><input type="radio" name="q5" value="remote"> remote</label>
+<label class="option"><input type="radio" name="q5" value="benefit"> benefit</label>
+</div><div class="explanation">“Volunteers” = các tình nguyện viên. Sau “needs more” cần danh từ chỉ người. Câu đầy đủ: needs more volunteers.</div></div>
+</div>
+<button class="check-btn" onclick="checkMC('ex1',5,'score1')">Check Exercise 1</button>
+<div id="score1" class="score" style="display:none"></div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>Exercise 2 — Choose the Correct Word</h2><span class="badge">Adjectives</span></div>
+<div id="ex2">
+<div class="question" data-answer="careful">
+<div class="qtext">1. We need to be careful / careless when we record the donations.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q6" value="careful"> careful</label>
+<label class="option"><input type="radio" name="q6" value="careless"> careless</label>
+</div><div class="explanation">“Be careful” = cẩn thận. Khi ghi chép tiền/đồ quyên góp, chúng ta cần cẩn thận.</div></div>
+
+<div class="question" data-answer="interested">
+<div class="qtext">2. I am interested / interesting in community development activities.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q7" value="interested"> interested</label>
+<label class="option"><input type="radio" name="q7" value="interesting"> interesting</label>
+</div><div class="explanation">“Be interested in + noun/V-ing” = quan tâm/hứng thú với. “I am interested in...” diễn tả cảm xúc của người nói.</div></div>
+
+<div class="question" data-answer="exciting">
+<div class="qtext">3. There are excited / exciting volunteering opportunities in our community.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q8" value="excited"> excited</label>
+<label class="option"><input type="radio" name="q8" value="exciting"> exciting</label>
+</div><div class="explanation">“Exciting” mô tả sự vật/sự việc gây hứng thú. “Volunteering opportunities” là những cơ hội thú vị, nên dùng exciting.</div></div>
+
+<div class="question" data-answer="hopeless">
+<div class="qtext">4. Last year, I was hopeful / hopeless at maths. I couldn't even do simple addition in my head.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q9" value="hopeful"> hopeful</label>
+<label class="option"><input type="radio" name="q9" value="hopeless"> hopeless</label>
+</div><div class="explanation">“Hopeless at maths” = rất kém môn toán / gần như không có khả năng làm toán. Việc không làm được phép cộng đơn giản củng cố nghĩa này.</div></div>
+</div>
+<button class="check-btn" onclick="checkMC('ex2',4,'score2')">Check Exercise 2</button>
+<div id="score2" class="score" style="display:none"></div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>Exercise 3 — Verb Forms</h2><span class="badge">Past Continuous vs Past Simple</span></div>
+<div id="ex3">
+<div class="question" data-answer="was working">
+<div class="qtext">1. While Lan was working / worked as a volunteer in the countryside, she met an old friend.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q10" value="was working"> was working</label>
+<label class="option"><input type="radio" name="q10" value="worked"> worked</label>
+</div><div class="explanation">Sau “while”, hành động đang diễn ra trong một khoảng thời gian thường dùng Past Continuous: “was working”. “She met...” là hành động xảy ra trong lúc đó.</div></div>
+
+<div class="question" data-answer="told">
+<div class="qtext">2. I was revising for my civics class when my dad was telling / told me about the volunteer job.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q11" value="was telling"> was telling</label>
+<label class="option"><input type="radio" name="q11" value="told"> told</label>
+</div><div class="explanation">“Was revising” là hành động đang diễn ra; “told” là hành động ngắn xen vào. Cấu trúc: was/were + V-ing + when + Past Simple.</div></div>
+
+<div class="question" data-answer="were helping">
+<div class="qtext">3. We saw many unhappy children while we were helping / helped people in remote areas.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q12" value="were helping"> were helping</label>
+<label class="option"><input type="radio" name="q12" value="helped"> helped</label>
+</div><div class="explanation">“While” nhấn mạnh hành động đang diễn ra: “were helping”. “We saw...” là hành động xảy ra trong thời gian đó.</div></div>
+
+<div class="question" data-answer="realised">
+<div class="qtext">4. He was sorting the donations when he was realising / realised how generous people were.</div>
+<div class="options">
+<label class="option"><input type="radio" name="q13" value="was realising"> was realising</label>
+<label class="option"><input type="radio" name="q13" value="realised"> realised</label>
+</div><div class="explanation">“Was sorting” là hành động đang diễn ra. “Realised” là khoảnh khắc nhận ra, nên dùng Past Simple.</div></div>
+</div>
+<button class="check-btn" onclick="checkMC('ex3',4,'score3')">Check Exercise 3</button>
+<div id="score3" class="score" style="display:none"></div>
+
+<div class="grammar">
+<strong>GRAMMAR NOTE</strong><br>
+• <strong>Past Continuous:</strong> was/were + V-ing → hành động đang diễn ra tại một thời điểm trong quá khứ.<br>
+• <strong>Past Simple:</strong> V2/ed → hành động đã xảy ra/kết thúc.<br>
+• <strong>while + Past Continuous</strong>: While I was studying, my friend called me.<br>
+• <strong>when + Past Simple</strong>: I was studying when my friend called me.<br>
+→ Mẫu rất hay gặp: <strong>Past Continuous + when + Past Simple</strong>.
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>Exercise 4 — Combine with when / while</h2><span class="badge">Write your answer</span></div>
+<p class="small">Type your answer. Capital letters are not important.</p>
+<div id="ex4">
+
+<div class="question" data-answer="While they were cleaning the streets, it started to rain.">
+<div class="qtext">1. They were cleaning the streets. It started to rain.</div>
+<input class="fill-input" id="a1" placeholder="Type your sentence">
+<div class="explanation">Đáp án: <b>While they were cleaning the streets, it started to rain.</b><br>“were cleaning” là hành động đang diễn ra; “started” là hành động xảy ra xen vào.</div></div>
+
+<div class="question" data-answer="While I was watching TV, I saw the floods and landslides in the area.">
+<div class="qtext">2. I was watching TV. I saw the floods and landslides in the area.</div>
+<input class="fill-input" id="a2" placeholder="Type your sentence">
+<div class="explanation">Đáp án: <b>While I was watching TV, I saw the floods and landslides in the area.</b><br>“While + was watching” mô tả hoạt động đang diễn ra; “saw” là sự việc xảy ra trong lúc đó.</div></div>
+
+<div class="question" data-answer="While Tim was searching for employment opportunities, he found a job advert from a non-governmental organisation.">
+<div class="qtext">3. Tim was searching for employment opportunities. He found a job advert from a non-governmental organisation.</div>
+<input class="fill-input" id="a3" placeholder="Type your sentence">
+<div class="explanation">Đáp án: <b>While Tim was searching for employment opportunities, he found a job advert from a non-governmental organisation.</b><br>“was searching” là quá trình đang diễn ra; “found” là hành động xảy ra trong quá trình đó.</div></div>
+
+<div class="question" data-answer="While they were visiting some poor villages, they decided to help build a community centre for young people.">
+<div class="qtext">4. They decided to help build a community centre for young people. They were visiting some poor villages.</div>
+<input class="fill-input" id="a4" placeholder="Type your sentence">
+<div class="explanation">Đáp án: <b>While they were visiting some poor villages, they decided to help build a community centre for young people.</b><br>“were visiting” là hành động đang diễn ra; “decided” là quyết định xảy ra trong thời gian đó.</div></div>
+</div>
+<button class="check-btn" onclick="checkWriting()">Check Exercise 4</button>
+<div id="score4" class="score" style="display:none"></div>
+
+<div class="grammar">
+<strong>WHEN vs WHILE</strong><br>
+• <strong>while</strong> thường đi với hành động đang diễn ra: <strong>while + was/were + V-ing</strong>.<br>
+• <strong>when</strong> thường đi với hành động ngắn/xảy ra tại một thời điểm: <strong>when + Past Simple</strong>.<br>
+• Có thể đổi vị trí hai mệnh đề: <strong>While I was watching TV, I saw the news.</strong> = <strong>I saw the news while I was watching TV.</strong>
+</div>
+</section>
+
+<section class="section">
+<h2>Vocabulary Review</h2>
+<div class="vocab">
+<div class="vocab-card"><b>donate (v)</b><br>quyên góp<br><span class="small">donate money / food / clothes</span></div>
+<div class="vocab-card"><b>volunteer (n/v)</b><br>tình nguyện viên; tình nguyện<br><span class="small">volunteer to help</span></div>
+<div class="vocab-card"><b>generous (adj)</b><br>hào phóng</div>
+<div class="vocab-card"><b>remote (adj)</b><br>xa xôi, hẻo lánh<br><span class="small">a remote area</span></div>
+<div class="vocab-card"><b>benefit (v)</b><br>mang lại lợi ích cho<br><span class="small">benefit local people</span></div>
+<div class="vocab-card"><b>careful (adj)</b><br>cẩn thận</div>
+<div class="vocab-card"><b>interested (adj)</b><br>cảm thấy hứng thú<br><span class="small">be interested in + noun/V-ing</span></div>
+<div class="vocab-card"><b>interesting (adj)</b><br>thú vị, gây hứng thú</div>
+<div class="vocab-card"><b>excited (adj)</b><br>cảm thấy phấn khích</div>
+<div class="vocab-card"><b>exciting (adj)</b><br>thú vị, gây phấn khích</div>
+<div class="vocab-card"><b>hopeful (adj)</b><br>đầy hy vọng</div>
+<div class="vocab-card"><b>hopeless (adj)</b><br>vô vọng; rất kém về một lĩnh vực<br><span class="small">hopeless at maths</span></div>
+</div>
+</section>
+</div>
+
+<script>
+function checkMC(sectionId,total,scoreId){
+ const qs=document.querySelectorAll('#'+sectionId+' .question');
+ let score=0;
+ qs.forEach(q=>{
+   const selected=q.querySelector('input:checked');
+   const result=q.querySelector('.result');
+   if(result) result.remove();
+   const r=document.createElement('div');
+   r.className='result';
+   if(selected && selected.value===q.dataset.answer){
+      score++; r.classList.add('correct'); r.textContent='✓ Correct';
+   }else{
+      r.classList.add('wrong'); r.textContent='✗ Not correct — check the explanation below.';
+   }
+   q.appendChild(r);
+   r.style.display='block';
+   q.querySelector('.explanation').style.display='block';
+ });
+ const box=document.getElementById(scoreId);
+ box.style.display='block';
+ box.textContent='Score: '+score+' / '+total+' ('+Math.round(score/total*100)+'%)';
+}
+
+function normalize(s){
+ return s.toLowerCase().trim()
+   .replace(/[.,!?]/g,'')
+   .replace(/\s+/g,' ')
+   .replace(/^while /,'while ');
+}
+function checkWriting(){
+ const answers=[
+  'While they were cleaning the streets, it started to rain.',
+  'While I was watching TV, I saw the floods and landslides in the area.',
+  'While Tim was searching for employment opportunities, he found a job advert from a non-governmental organisation.',
+  'While they were visiting some poor villages, they decided to help build a community centre for young people.'
+ ];
+ let score=0;
+ answers.forEach((ans,i)=>{
+   const input=document.getElementById('a'+(i+1));
+   const q=input.closest('.question');
+   let r=q.querySelector('.result'); if(r) r.remove();
+   r=document.createElement('div'); r.className='result';
+   if(normalize(input.value)===normalize(ans)){
+      score++; r.classList.add('correct'); r.textContent='✓ Correct';
+   }else{
+      r.classList.add('wrong'); r.textContent='✗ Check the model answer and explanation below.';
+   }
+   q.appendChild(r); r.style.display='block';
+   q.querySelector('.explanation').style.display='block';
+ });
+ const box=document.getElementById('score4');
+ box.style.display='block';
+ box.textContent='Score: '+score+' / 4 ('+Math.round(score/4*100)+'%)';
+}
+</script>
+</body>
+</html>
